@@ -1,0 +1,8 @@
+DATA: ${ROOT}/iEEG/word_epochs/raw
+REPO_ROOT: ${ROOT}/FYP
+CACHE: ${ROOT}/.cache
+FIGURES: ${ROOT}/FYP/figures
+EMBEDDINGS_PATH: ${CACHE}/embeddings_old
+SCORES_PATH: ${CACHE}/r_scores_sklearn_parallel
+STIMULI_WAV: ${ROOT}/iEEG/stimuli/wav
+

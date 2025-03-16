@@ -1,0 +1,163 @@
+bert-base:
+  model_iden: bert-base-uncased
+  max_window_size: 512     
+  num_layers: 12
+  num_parameters: 117M
+  num_embeddings: 768
+  model_type: llm
+  bidirectional: True
+
+bert-large:
+  model_iden: bert-large-uncased
+  max_window_size: 512        # Again, you might choose 512 to align with pre-training; 1024 if you want larger windows for extraction
+  num_layers: 24
+  num_parameters: 340M
+  num_embeddings: 1024
+  model_type: llm
+  bidirectional: True
+
+gpt2:
+  model_iden: gpt2
+  max_window_size: 1024
+  num_layers: 12
+  num_parameters: 117M
+  num_embeddings: 768
+  model_type: llm
+  bidirectional: False
+
+
+gpt2-medium:
+  model_iden: gpt2-medium
+  max_window_size: 1024
+  num_layers: 24
+  num_parameters: 345M
+  model_type: llm
+  bidirectional: False
+
+gpt2-large:
+  model_iden: gpt2-large
+  max_window_size: 1024
+  num_layers: 36
+  num_parameters: 774M
+  num_embeddings: 1280
+  model_type: llm
+  bidirectional: False
+
+gpt2-xl:
+  model_iden: gpt2-xl
+  max_window_size: 1024
+  num_layers: 48
+  num_parameters: 1.5B
+  model_type: llm
+  bidirectional: False
+
+llama3-8b:
+  model_iden: meta-llama/Meta-Llama-3-8B
+  max_window_size: 1500
+  num_layers: 32
+  num_parameters: 8B
+  num_embeddings: 4096
+  model_type: llm
+  bidirectional: False
+
+spectrogram:
+  model_iden: spectrogram
+  num_layers: none
+  num_embeddings: 128
+  model_type: acoustic
+
+cochleagram:
+  model_iden: cochleagram
+  num_layers: none
+  num_embeddings: 211
+  model_type: acoustic
+
+cochleagram_gpt2_stacked: 
+    model_iden: cochleagram_gpt2_stacked
+    num_layers: 12
+    num_embeddings: 879
+    model_type: llm
+
+whisper_tiny_all: 
+    model_iden: whisper-tiny-all
+    num_layers: 1
+    num_embeddings: 384
+    model_type: speech
+
+whisper_tiny: 
+    model_iden: whisper-tiny
+    num_layers: 5
+    num_embeddings: 384
+    num_parameters: 39M
+    model_type: speech
+    
+whisper_base:
+  model_iden: whisper-base
+  num_layers: 6
+  num_embeddings: 384
+  num_parameters: 74M
+  model_type: speech
+
+whisper_small: 
+    model_iden: whisper-small
+    num_layers: 12
+    num_embeddings: 768
+    num_parameters: 224M
+    model_type: speech
+
+whisper_medium:
+  model_iden: whisper-medium
+  num_layers: 16
+  num_embeddings: 1024
+  num_parameters: 769M
+  model_type: speech
+
+whisper_large:
+  model_iden: whisper-large
+  num_layers: 24
+  num_embeddings: 1280
+  num_parameters: 1.6B
+  model_type: speech
+
+
+whisper_tiny_decoder: 
+    model_iden: whisper-tiny
+    num_layers: 5
+    num_embeddings: 384
+    num_parameters: 39M
+    model_type: speech
+    
+whisper_base_decoder:
+  model_iden: whisper-base
+  num_layers: 6
+  num_embeddings: 384
+  num_parameters: 74M
+  model_type: speech
+
+whisper_small_decoder: 
+    model_iden: whisper-small
+    num_layers: 12
+    num_embeddings: 768
+    num_parameters: 224M
+    model_type: speech
+
+whisper_medium_decoder:
+  model_iden: whisper-medium
+  num_layers: 16
+  num_embeddings: 1024
+  num_parameters: 769M
+  model_type: speech
+
+whisper_large_decoder:
+  model_iden: whisper-large
+  num_layers: 24
+  num_embeddings: 1280
+  num_parameters: 1.6B
+  model_type: speech
+
+
+glove:
+    model_iden: glove
+    num_layers: none
+    num_embeddings: 300
+    model_type: word_embedding
